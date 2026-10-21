@@ -21,11 +21,6 @@ class CourseAdmin(admin.ModelAdmin):
 class LessonAdmin(admin.ModelAdmin):
     list_display = ['title']
 
-
-class Class_Name(admin.StackedInline):
-		model = Model_Name
-		extra = 2
-
 class ChoiceInline(admin.StackedInline):
 		model = Choice
 		extra = 2
